@@ -1,0 +1,22 @@
+{
+  "short_name": "Heft Reng",
+  "name": "Hayata Dair ",
+  "icons": 
+  [
+    {
+      "src": "https://1.bp.blogspot.com/-fEmNqiJdSa8/XsRapm0abOI/AAAAAAAAALE/rrhlIY9Gp2Ua5CZmv4X_Aj1FCuYeyKelACLcBGAsYHQ/s1600/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://1.bp.blogspot.com/-pTdVx-Cf2Zo/XsRa8Yxy-VI/AAAAAAAAALM/DAEkHhDJu1QSFOZxK-aXHpU0ilQXAFxFQCLcBGAsYHQ/s1600/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://heft-reng.blogspot.com",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}
