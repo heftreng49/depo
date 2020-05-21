@@ -1,37 +1,25 @@
-var instagramIcon = '<i class="fa fa-instagram" style="color: #FFFC00" aria-hidden="true"></i>';
+// Get the modal
+var modal = document.getElementById("myModal");
 
-var instagramNote = ' Add National Geographic on instagram!';
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-$("body").overhang({
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-  type: "confirm",
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-  primary: "#9b59b6",
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-  accent: "#8e44ad",
-
-  message: instagramIcon + instagramNote,
-
-  custom: true,
-
-  html: true,
-
-  overlay: true,
-
-  overlayColor: "#1abc9c",
-
-  callback: function (value) {
-
-    if (value) {
-
-      window.location.href = "https://www.instagram.com/heftreng__/";
-
-    } else {
-
-      alert("Maybe next time then...");
-
-    }
-
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-
-});
+}
