@@ -1,5 +1,5 @@
 {
-  "short_name": "Bu Bi Sanat",
+  "short_name": "BuBiSanat",
   "name": "Düşünen ve üreten herkes için",
   "icons": 
   [
@@ -15,9 +15,8 @@
     }
   ],
   "start_url": "https://bubisanat.com",
-  "background_color": "#3367D6",
+  "background_color": "#feb100",
   "display": "standalone",
   "scope": "/",
   "theme_color": "transparent"
 }
-
