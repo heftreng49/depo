@@ -13,18 +13,13 @@
 
   "icons": [
     {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6sp", 
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8eUmaPUkzGe4R9YQvDdagih3ly8HBFOE-P5TFq60QCLrv_Ah3UPDdlWIdnA5eVSJ7dPaKj44RCd9PkmBlfPqmCCgToLNv0_dls4BwJRgHAAZ53HMzQi8UUNHcOlxcIycJI1JnbqmAnl2G-QQAz8Q8knwEHki4SUy4ozHpjQM_6eGsWSkWKg_-WmI57DY/s192/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6sp", 
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfYTt3rJ1sAv9tVDmm5eUpo6s9mVUhb801Xra8l-xF9D0QjT_1Snv4bKnmV1aYvU52jhjbFMHqGRnZfaIYNJFS59EHrSsNQyHpTsHajbRcBGrYPODY6Q5S8grJk_m9izyMMZI86bJrqhtnqzKlckkneH8iidDUqZ2GD9aKhnART_Rcbj2i-wFAxkWLDTQ/s512/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6sp", 
-      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any maskable"
     }
