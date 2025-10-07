@@ -1,30 +1,67 @@
 {
-  'name': 'Heft Reng',
-  'short_name': 'HeftReng',
-  'description': 'Heft Reng – Ziman, Çand, Huner',
-  'start_url': 'https://heft-reng.blogspot.com/?pwa=true',
-  'display': 'standalone',
-  'background_color': '#1a1a1a',
-  'theme_color': '#ffb300',
-  'orientation': 'portrait',
-  'scope': '/',
-  'lang': 'tr-TR',
-  'icons': [
+  "name": "Heft Reng",
+  "short_name": "HeftReng",
+  "description": "Heft Reng – Renklerin ve kelimelerin buluştuğu modern blog. İlham verici yazılar, kişisel gelişim ve kültür üzerine içerikler.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "lang": "tr",
+  "dir": "ltr",
+
+  "icons": [
     {
-      'src': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6spF1zb4C2yzPlbTIDApkjemOj7dWvxVaoscZ19GxtRRHT1cl4t4fEWTVLVO5DHPsyes5irh79RJEODYfShnnWnKRavRGQz9phutiNLBrvzK-RbKvS1X0E9tnzFP6Faqtofm7ppwZ0/s1600/favicon-32x32.png',
-      'sizes': '32x32',
-      'type': 'image/png'
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6sp", 
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      'src': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6spF1zb4C2yzPlbTIDApkjemOj7dWvxVaoscZ19GxtRRHT1cl4t4fEWTVLVO5DHPsyes5irh79RJEODYfShnnWnKRavRGQz9phutiNLBrvzK-RbKvS1X0E9tnzFP6Faqtofm7ppwZ0/s1600/favicon-32x32.png',
-      'sizes': '192x192',
-      'type': 'image/png'
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6sp", 
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
-      'src': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6spF1zb4C2yzPlbTIDApkjemOj7dWvxVaoscZ19GxtRRHT1cl4t4fEWTVLVO5DHPsyes5irh79RJEODYfShnnWnKRavRGQz9phutiNLBrvzK-RbKvS1X0E9tnzFP6Faqtofm7ppwZ0/s1600/favicon-32x32.png',
-      'sizes': '512x512',
-      'type': 'image/png',
-      'purpose': 'any maskable'
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAa6sp", 
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+
+  "screenshots": [
+    {
+      "src": "/images/screenshot-home.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "Ana Sayfa"
+    },
+    {
+      "src": "/images/screenshot-post.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "Blog Yazısı"
     }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Yeni Yazılar",
+      "short_name": "Yazılar",
+      "description": "Heft Reng’deki en yeni yazılara göz at",
+      "url": "/search/label/Yeni%20Yazılar",
+      "icons": [{ "src": "/icons/new.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Kategoriler",
+      "short_name": "Kategoriler",
+      "description": "Tüm kategorileri keşfet",
+      "url": "/p/kategoriler.html",
+      "icons": [{ "src": "/icons/categories.png", "sizes": "96x96" }]
+    }
+  ],
+
+  "related_applications": [],
+  "prefer_related_applications": false
+}
