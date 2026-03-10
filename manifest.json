@@ -1,7 +1,7 @@
-{
+    {
   "name": "Heftreng — Civaka Nivîskar",
   "short_name": "Heftreng",
-  "description": "Heftreng sosyal blog platformu — paylaş, beğen, takip et",
+  "description": "Heftreng sosyal blog platformu",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -9,28 +9,7 @@
   "background_color": "#07070d",
   "theme_color": "#7c3aed",
   "lang": "ku",
-  "dir": "ltr",
-  "categories": ["social", "news", "lifestyle"],
-  "prefer_related_applications": false,
   "icons": [
-    {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "any"
-    },
     {
       "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png",
       "sizes": "192x192",
@@ -44,52 +23,18 @@
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [
-    {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/screenshots/mobile.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Heftreng mobil görünüm"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/screenshots/desktop.png",
-      "sizes": "1280x800",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Heftreng masaüstü görünüm"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Akış",
       "short_name": "Feed",
-      "description": "Feed paylaşımlarını gör",
       "url": "/?tab=feed",
-      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Blog",
       "short_name": "Blog",
-      "description": "Blog yazılarını oku",
       "url": "/?tab=blog",
-      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png", "sizes": "96x96" }]
-    },
-    {
-      "name": "Profil",
-      "short_name": "Profil",
-      "description": "Profilini görüntüle",
-      "url": "/?tab=profile",
-      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png", "sizes": "192x192" }]
     }
-  ],
-  "share_target": {
-    "action": "/share",
-    "method": "GET",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
+  ]
     }
-  }
-}
