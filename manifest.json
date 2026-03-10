@@ -11,16 +11,63 @@
   "lang": "ku",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png",
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfVvJIfdwZcUURMpkwNHdgWvBu5ARPhQm2mNhjgnvIX9wkkB6V6NbZqALHXYfZYEfXj5uUd4dI01XMdZuRWHGflo_SFGe61aZTA4_kAaFldoVhUpOdXsiBh3nVxBjhd8o0kJVIv_nRnt7mTygZd4Ghh9e9VD_Tw-O02IJiRkBFnJkEBSIXRS0TqxlCOOk/s72/1000021829.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjKinTeIMCNAj9TV5Hl1WR44s5Rxg1H_EqOf1jVWSe3No4w-sGXFT4HMwoAQ-IFWG-r9Y3Aw2bx0jY0zKr4JzihrFhWsuzb8OdtH2LDpSHnCpdBL8oIm3d4c-WC6ZqGxkj8sz3kKhqCGc-jGUDixpL-4_7ae-p3HkcFEunhv5rwkyXNGF5JmfsRjfzHIk/s96/1000021828.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnwKFhJN0MeM9aKZu_gytgO2qmbUpnH-cuYvDvHLAmoNcpGaXFuUIwhwhiJ5IHkvxObEXhs3i24OxbUYvDvXtEExbN5HDk30tpFI1zPrgihyphenhyphenxcSu_mWJzRTT4X0M_WScO2_Ij8KLLBpIKPpu3MFBD5hF_LCC0eWQabzsBnKJNk5Ui5wOXqAaeismDLH9w/s152/1000021822.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBfMbVuIMH_wI9fOesL6sGDsPjA2oSm0IhCGXSCRZSU3O7dGqpMfcX-dvWskhXJYEOGQW3IRbQvsw-rGqSw66s_CTnA0jHO4rA0W6eKtdQ73RfevihJJX5Tb3aSfVFIB6r0ai8W1Dnd_S8HPb1RUjdIbbmPkuUaoFfUpau6NsRJ8Hjw6qHP2NSqG59cxQ/s144/1000021820.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCT2r_Uql2cx10NIn_bnsFLN3MaG67ohl71ig3JvDzoPKKa5m9j7zt9GSn6l_xX_Nu_1dnztTnplP0HAtroD_shF2sF1dwgV3wAlG4T8cjjtHYm3yI7cuiP45citYA22tXTl4NkxZn2fCTvcrQG88VuQSsVI4PjEnYnICXmhJMXHkDCWLr1LAteOCHx-g/s640/1000021817.jpg",
+      "sizes": "640x640",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR5IpzADRyj4R8s04sON83HP5tklU2DOmlSLKKyyTVIl3vVYE7-9w7wSfYYUaKeIiRzWJg7tc1Oj0wHQmuYIN21JZ2lLR_YOf6djxNd_9f__PioKaMNNfFkX9NQwGhT6K9JMkdjm6CKsPqnHgu8W9L1GkpDDTFrA7bgRgIFc9VvTajKkX_-oswzk6Cvew/s128/1000021821.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgldI4j_UJqGzDdIiAOQWHN5OyMqWGAqP1Chp0uNUULorf2UYB9Tq5Bl0jK6QVZenjKclg60hHrwAwvi8tIFvc-cLvJvWmX_xamTNo5x-wkoj998E_HD46Q7JCsP79lrk6ve8WstIVIjrvy2OhVgEq4OaAQ4FpLdVI1d_1BgkXd8csucqnSGLIMBTlKxCU/s384/1000021825.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7iDPAjc6m5HbsUriRag4WEVWp9GXwnjsJ06rA9TqdcxRRazhJlw1aICAo7iFU0rCQ_NyRpULiy39nnczJ4Afsctkyn6cH7IpTORBRVMWZf58oibMVnba5wK70AcgoQ6lGX0bg_GPS-BPEJZwMY_wwkNGTdOpjIXQ27U553wOF2Wb2D9sGOgtYMvKx-8s/s192/1000021824.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-512.png",
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKg7Dp9kzSoF8ItQD6s35QxbR9PJVhr99aGtDInd8WjI0DkA_-8S9cp70GnS2dmS5l2uxJahtbtaFiI-LxchDx6s7_JCTJ8a2CmUrSo-_8d0rG-f_SyTkiwImGFdRkjcpaoDpe57vYPrB0AH6HO6ofFV1nXkTqd8zoS2tsekw3FgWLn0aSlpoR4fI5VD8/s192/1000021823.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp93lc9X_PrTg1AvRZ-0vUMf08VfQAxDbBqrsTBK-M-BF8gfbLFT96uZ9WE2G8r8UTFbT8gz7fQM5FBhoRp1e0x5N9UC4tKGkXpegFm7e8MIJo46ijuqFexN3LlyNl-tY514lNoXJEemzNnWZg0Abdu7oqNeVXnGp8a19KZkcPJZ6wcoEwXL9w1QhszSI/s512/1000021826.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTxhRhtaMlkavQhtGBevnSvsL9ajJTrEfrVkQsrvGJV6bb3TSGwQDN4duRP76kNvDCT7AhVQl-SGGFM2nGFWnIByTYwNB7XO6rHDNDvjBylgTtVsvwODtdHIJfKwuxlxvFhPq3glVwqywm490ig8fYeLaSh-F_lgD_6h8nanRY1Qo6SlAV8fvQePqcnGU/s512/1000021827.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "shortcuts": [
@@ -28,13 +75,13 @@
       "name": "Akış",
       "short_name": "Feed",
       "url": "/?tab=feed",
-      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7iDPAjc6m5HbsUriRag4WEVWp9GXwnjsJ06rA9TqdcxRRazhJlw1aICAo7iFU0rCQ_NyRpULiy39nnczJ4Afsctkyn6cH7IpTORBRVMWZf58oibMVnba5wK70AcgoQ6lGX0bg_GPS-BPEJZwMY_wwkNGTdOpjIXQ27U553wOF2Wb2D9sGOgtYMvKx-8s/s192/1000021824.png", "sizes": "192x192" }]
     },
     {
       "name": "Blog",
       "short_name": "Blog",
       "url": "/?tab=blog",
-      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7iDPAjc6m5HbsUriRag4WEVWp9GXwnjsJ06rA9TqdcxRRazhJlw1aICAo7iFU0rCQ_NyRpULiy39nnczJ4Afsctkyn6cH7IpTORBRVMWZf58oibMVnba5wK70AcgoQ6lGX0bg_GPS-BPEJZwMY_wwkNGTdOpjIXQ27U553wOF2Wb2D9sGOgtYMvKx-8s/s192/1000021824.png", "sizes": "192x192" }]
     }
   ]
     }
