@@ -1,62 +1,95 @@
 {
-  "name": "Heft Reng",
-  "short_name": "HeftReng",
-  "description": "Heft Reng – Renklerin ve kelimelerin buluştuğu modern blog. İlham verici yazılar, kişisel gelişim ve kültür üzerine içerikler.",
-  "start_url": "/?source=pwa",
+  "name": "Heftreng — Civaka Nivîskar",
+  "short_name": "Heftreng",
+  "description": "Heftreng sosyal blog platformu — paylaş, beğen, takip et",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#ffffff",
-  "theme_color": "#1a1a1a",
-  "lang": "tr",
+  "orientation": "portrait-primary",
+  "background_color": "#07070d",
+  "theme_color": "#7c3aed",
+  "lang": "ku",
   "dir": "ltr",
-
+  "categories": ["social", "news", "lifestyle"],
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8eUmaPUkzGe4R9YQvDdagih3ly8HBFOE-P5TFq60QCLrv_Ah3UPDdlWIdnA5eVSJ7dPaKj44RCd9PkmBlfPqmCCgToLNv0_dls4BwJRgHAAZ53HMzQi8UUNHcOlxcIycJI1JnbqmAnl2G-QQAz8Q8knwEHki4SUy4ozHpjQM_6eGsWSkWKg_-WmI57DY/s192/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfYTt3rJ1sAv9tVDmm5eUpo6s9mVUhb801Xra8l-xF9D0QjT_1Snv4bKnmV1aYvU52jhjbFMHqGRnZfaIYNJFS59EHrSsNQyHpTsHajbRcBGrYPODY6Q5S8grJk_m9izyMMZI86bJrqhtnqzKlckkneH8iidDUqZ2GD9aKhnART_Rcbj2i-wFAxkWLDTQ/s512/android-chrome-512x512.png",
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-
   "screenshots": [
     {
-      "src": "/images/screenshot-home.png",
-      "sizes": "1080x1920",
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/screenshots/mobile.png",
+      "sizes": "390x844",
       "type": "image/png",
-      "label": "Ana Sayfa"
+      "form_factor": "narrow",
+      "label": "Heftreng mobil görünüm"
     },
     {
-      "src": "/images/screenshot-post.png",
-      "sizes": "1080x1920",
+      "src": "https://raw.githubusercontent.com/heftreng49/depo/master/screenshots/desktop.png",
+      "sizes": "1280x800",
       "type": "image/png",
-      "label": "Blog Yazısı"
+      "form_factor": "wide",
+      "label": "Heftreng masaüstü görünüm"
     }
   ],
-
   "shortcuts": [
     {
-      "name": "Yeni Yazılar",
-      "short_name": "Yazılar",
-      "description": "Heft Reng’deki en yeni yazılara göz at",
-      "url": "/search/label/Yeni%20Yazılar",
-      "icons": [{ "src": "/icons/new.png", "sizes": "96x96" }]
+      "name": "Akış",
+      "short_name": "Feed",
+      "description": "Feed paylaşımlarını gör",
+      "url": "/?tab=feed",
+      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png", "sizes": "96x96" }]
     },
     {
-      "name": "Kategoriler",
-      "short_name": "Kategoriler",
-      "description": "Tüm kategorileri keşfet",
-      "url": "/p/kategoriler.html",
-      "icons": [{ "src": "/icons/categories.png", "sizes": "96x96" }]
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Blog yazılarını oku",
+      "url": "/?tab=blog",
+      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Profil",
+      "short_name": "Profil",
+      "description": "Profilini görüntüle",
+      "url": "/?tab=profile",
+      "icons": [{ "src": "https://raw.githubusercontent.com/heftreng49/depo/master/icons/icon-96.png", "sizes": "96x96" }]
     }
   ],
-
-  "related_applications": [],
-  "prefer_related_applications": false
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
