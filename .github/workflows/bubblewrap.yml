@@ -25,23 +25,23 @@ jobs:
 
       - name: Configure and Build
         run: |
-          # 1. Bubblewrap yapılandırmasını oluştur
+          # 1. Bubblewrap ayarlarını önceden yapıştır
           mkdir -p ~/.bubblewrap
           echo "{\"jdkPath\":\"$JAVA_HOME\",\"androidSdkPath\":\"/home/runner/android-sdk\"}" > ~/.bubblewrap/config.json
           
-          # 2. Projeyi başlat
-          # --manifest: GitHub'daki dosyan
-          # --host: Uygulamanın çalışacağı gerçek adres (Blogger)
-          # --yes: Diğer sorulara varsayılan cevapları ver
-          bubblewrap init --manifest https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json \
-                          --host heft-reng.blogspot.com \
-                          --path / \
-                          --yes
+          # 2. Bubblewrap Init (Kritik Nokta)
+          # Hem flagları kullanıyoruz hem de her ihtimale karşı cevapları pipe (printf) ile gönderiyoruz.
+          # İlk satır: Domain (heft-reng.blogspot.com)
+          # İkinci satır: Path (/)
+          printf "heft-reng.blogspot.com\n/\n" | bubblewrap init --manifest https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json \
+                                                                  --host heft-reng.blogspot.com \
+                                                                  --path / \
+                                                                  --yes
           
-          # 3. Android SDK kurulumu ve lisansları (Hata alsa da devam etmesi için || true)
+          # 3. Android SDK kurulumunu onayla
           yes | bubblewrap doctor || true
           
-          # 4. APK'yı derle (İmzalama aşamasını atlıyoruz)
+          # 4. APK'yı oluştur
           bubblewrap build --skipSigning
 
       - name: Upload APK
@@ -49,3 +49,4 @@ jobs:
         with:
           name: HeftReng-Native-APK
           path: ./*.apk
+          
