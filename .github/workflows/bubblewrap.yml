@@ -1,0 +1,31 @@
+name: Build Bubblewrap APK
+on:
+  workflow_dispatch: # Manuel başlatmak için
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install Bubblewrap
+        run: npm install -g @bubblewrap/cli
+
+      - name: Build APK
+        # Buradaki linki kendi manifest linkinle değiştirebilirsin
+        run: |
+          bubblewrap init --manifest https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json --yes
+          bubblewrap build --skipSigning
+          
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: heftreng-app
+          path: ./*.apk
+          
