@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Daha kararlı bir sürüm olan LTS kullanıyoruz
+          node-version: '20'
 
       - name: Setup Java JDK
         uses: actions/setup-java@v4
@@ -29,15 +29,19 @@ jobs:
           mkdir -p ~/.bubblewrap
           echo "{\"jdkPath\":\"$JAVA_HOME\",\"androidSdkPath\":\"/home/runner/android-sdk\"}" > ~/.bubblewrap/config.json
           
-          # 2. Doğrudan sitenin URL'sini hedef alıyoruz. 
-          # Bu sayede 'Invalid URL' hatası almazsın çünkü domain bellidir.
-          # Soru sormaması için 'yes' komutuyla cevapları önceden gönderiyoruz.
-          yes | bubblewrap init --url https://heft-reng.blogspot.com --yes
+          # 2. Projeyi başlat
+          # --manifest: GitHub'daki dosyan
+          # --host: Uygulamanın çalışacağı gerçek adres (Blogger)
+          # --yes: Diğer sorulara varsayılan cevapları ver
+          bubblewrap init --manifest https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json \
+                          --host heft-reng.blogspot.com \
+                          --path / \
+                          --yes
           
-          # 3. Android SDK ve lisans onaylarını sessizce hallet
+          # 3. Android SDK kurulumu ve lisansları (Hata alsa da devam etmesi için || true)
           yes | bubblewrap doctor || true
           
-          # 4. APK'yı oluştur (İmzalama aşamasını atlıyoruz)
+          # 4. APK'yı derle (İmzalama aşamasını atlıyoruz)
           bubblewrap build --skipSigning
 
       - name: Upload APK
