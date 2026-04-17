@@ -1,12 +1,12 @@
 name: Build Bubblewrap APK
 on:
-  workflow_dispatch: # Manuel başlatmak için
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -14,18 +14,33 @@ jobs:
         with:
           node-version: 'lts/*'
 
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
       - name: Install Bubblewrap
         run: npm install -g @bubblewrap/cli
 
-      - name: Build APK
-        # Buradaki linki kendi manifest linkinle değiştirebilirsin
+      - name: Configure and Build
         run: |
-          bubblewrap init --manifest https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json --yes
-          bubblewrap build --skipSigning
+          # 1. Bubblewrap ayarlarını soru sormadan önceden tanımlıyoruz
+          mkdir -p ~/.bubblewrap
+          echo "{\"jdkPath\":\"$JAVA_HOME\",\"androidSdkPath\":\"/home/runner/android-sdk\"}" > ~/.bubblewrap/config.json
           
+          # 2. Projeyi başlat (Varsayılan tüm ayarları kabul etmesi için --yes)
+          bubblewrap init --manifest https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json --yes
+          
+          # 3. Android SDK'yı kabul et ve indir (Etkileşimsiz modda)
+          yes | bubblewrap doctor || true
+          
+          # 4. APK'yı oluştur (İmzalama kısmını test için atlıyoruz)
+          bubblewrap build --skipSigning
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: heftreng-app
+          name: HeftReng-Native-APK
           path: ./*.apk
           
