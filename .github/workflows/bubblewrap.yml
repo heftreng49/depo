@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: '20' # Daha kararlı bir sürüm olan LTS kullanıyoruz
 
       - name: Setup Java JDK
         uses: actions/setup-java@v4
@@ -25,21 +25,19 @@ jobs:
 
       - name: Configure and Build
         run: |
-          # 1. Bubblewrap ayarlarını önceden oluştur
+          # 1. Bubblewrap yapılandırmasını oluştur
           mkdir -p ~/.bubblewrap
           echo "{\"jdkPath\":\"$JAVA_HOME\",\"androidSdkPath\":\"/home/runner/android-sdk\"}" > ~/.bubblewrap/config.json
           
-          # 2. Manifest dosyasını yerel olarak indir (Domain karmaşasını engellemek için)
-          curl -sL https://raw.githubusercontent.com/heftreng49/depo/refs/heads/master/manifest.json -o local_manifest.json
+          # 2. Doğrudan sitenin URL'sini hedef alıyoruz. 
+          # Bu sayede 'Invalid URL' hatası almazsın çünkü domain bellidir.
+          # Soru sormaması için 'yes' komutuyla cevapları önceden gönderiyoruz.
+          yes | bubblewrap init --url https://heft-reng.blogspot.com --yes
           
-          # 3. Projeyi başlat (Tüm sorulara boru hattıyla peşin cevap veriyoruz)
-          # Domain ve Path sorularına doğrudan cevap gönderiyoruz
-          printf "heft-reng.blogspot.com\n/\n" | bubblewrap init --manifest ./local_manifest.json --yes
-          
-          # 4. Android SDK kurulumunu sessizce onayla
+          # 3. Android SDK ve lisans onaylarını sessizce hallet
           yes | bubblewrap doctor || true
           
-          # 5. APK'yı derle
+          # 4. APK'yı oluştur (İmzalama aşamasını atlıyoruz)
           bubblewrap build --skipSigning
 
       - name: Upload APK
